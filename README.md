@@ -18,6 +18,6 @@ seqtk sample -s713 oilMP_S4_L001_R2_001.fastq 1500000 > mps2.fastq
 **Статистика по исходникам**  
 Создаю директории для анализа:  
 ```
-mkdir fast_dir
-mkdir milti_dir
+mkdir fastqc
+mkdir miltiqc
 ```
