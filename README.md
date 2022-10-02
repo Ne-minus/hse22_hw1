@@ -1,5 +1,5 @@
 # hse22_hw1
-# 1. Команды. 
+# 1. Основная часть 
 **Ссылки**
 ```
 ln -s /usr/share/data-minor-bioinf/assembly/oil_R1.fastq
