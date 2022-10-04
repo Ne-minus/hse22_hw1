@@ -35,3 +35,11 @@ platanus_internal_trim mps*
 ```
 rm sub1.fastq sub2.fastq mps1.fastq mps2.fastq
 ```
+Статистика по новым подрезанным файлам  
+```
+mkdir fast_trim
+ls sub* mps*| xargs -tI{} fastqc -o fast_trim {}
+mkdir multi_trim
+multiqc -o multi_trim fast_trim
+```
+**Сборка контигов и скаффолдов**  
