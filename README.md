@@ -26,8 +26,12 @@ mkdir miltiqc
 ls sub* mps* | xargs -tI{} fastqc -o fastqc {}
 multiqc -o multiqc fastqc
 ```
+Подрезаю и удаляю адаптеры
+```
+platanus_trim sub*
+platanus_internal_trim mps*
+```
 Удаляю исходники
 ```
-rm sub*
-rm mps*
+rm sub1.fastq sub2.fastq mps1.fastq mps2.fastq
 ```
