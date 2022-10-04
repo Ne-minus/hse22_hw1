@@ -43,3 +43,15 @@ mkdir multi_trim
 multiqc -o multi_trim fast_trim
 ```
 **Сборка контигов и скаффолдов**  
+Собираю контиги
+```
+time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
+```
+Собираю скаффолды
+```
+time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mps1.fastq.int_trimmed mps2.fastq.int_trimmed 2> scaffold.log
+```
+Уменьшаю количество гэпов
+```
+time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mps1.fastq.int_trimmed mps2.fastq.int_trimmed 2> gapclose.log
+```
