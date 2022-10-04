@@ -21,3 +21,13 @@ seqtk sample -s713 oilMP_S4_L001_R2_001.fastq 1500000 > mps2.fastq
 mkdir fastqc
 mkdir miltiqc
 ```
+**Получаю чтения через fastqc и затем получаю статистику через miltiqc**  
+```
+ls sub* mps* | xargs -tI{} fastqc -o fastqc {}
+multiqc -o multiqc fastqc
+```
+**Удаляю исходники**
+```
+rm sub*
+rm mps*
+```
