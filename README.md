@@ -1,4 +1,5 @@
 # hse22_hw1
+# [ссылка на Jupyter notebook](https://github.com/Ne-minus/hse22_hw1/blob/main/src/python_code.ipynb)
 # 1. Основная часть 
 **Ссылки**
 ```
@@ -41,6 +42,10 @@ mkdir fast_trim
 ls sub* mps*| xargs -tI{} fastqc -o fast_trim {}
 mkdir multi_trim
 multiqc -o multi_trim fast_trim
+```
+**Удаляю все .fastq файлы**
+```
+rm *fastq
 ```
 **Сборка контигов и скаффолдов**  
 Собираю контиги
