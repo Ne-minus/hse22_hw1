@@ -28,11 +28,14 @@ ls sub* mps* | xargs -tI{} fastqc -o fastqc {}
 multiqc -o multiqc fastqc
 ```
 ![Статистика до подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus1.png)
+![Статистика до подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus2.png)
 Подрезаю и удаляю адаптеры
 ```
 platanus_trim sub*
 platanus_internal_trim mps*
 ```
+![Статистика после подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus_trim1.png "Статистика после подрезания")
+![Статистика после подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus_trim2.png)
 Удаляю исходники
 ```
 rm sub1.fastq sub2.fastq mps1.fastq mps2.fastq
