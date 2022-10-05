@@ -19,7 +19,7 @@ seqtk sample -s713 oilMP_S4_L001_R2_001.fastq 1500000 > mps2.fastq
 Создаю директории для анализа:  
 ```
 mkdir fastqc
-mkdir miltiqc
+mkdir multiqc
 ```
 Получаю чтения через fastqc и затем получаю статистику через miltiqc  
 ```
