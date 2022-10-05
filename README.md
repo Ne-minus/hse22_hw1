@@ -43,6 +43,10 @@ ls sub* mps*| xargs -tI{} fastqc -o fast_trim {}
 mkdir multi_trim
 multiqc -o multi_trim fast_trim
 ```
+**Удаляю все .fastq файлы**
+```
+rm *fastq
+```
 **Сборка контигов и скаффолдов**  
 Собираю контиги
 ```
