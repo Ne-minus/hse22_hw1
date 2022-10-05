@@ -27,7 +27,7 @@ mkdir multiqc
 ls sub* mps* | xargs -tI{} fastqc -o fastqc {}
 multiqc -o multiqc fastqc
 ```
-
+![Статистика до подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus1.png)
 Подрезаю и удаляю адаптеры
 ```
 platanus_trim sub*
