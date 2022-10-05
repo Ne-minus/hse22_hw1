@@ -1,5 +1,5 @@
 # hse22_hw1
-# [ссылка на Jupyter notebook] 
+# [ссылка на Jupyter notebook](https://github.com/Ne-minus/hse22_hw1/blob/main/src/python_code.ipynb)
 # 1. Основная часть 
 **Ссылки**
 ```
