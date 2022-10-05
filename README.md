@@ -91,3 +91,5 @@ time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub3.fastq.trimmed sub4
 После подрезания:
 ![Статистика после подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus_trim1.png "Статистика после подрезания")
 ![Статистика после подрезания](https://github.com/Ne-minus/hse22_hw1/blob/main/pngs/bonus_trim2.png)
+**Вывод**  
+После того, как было изменено количество чтений, было найдено больше контигов и скаффолдов. Их получилось очень много (также выросло значение N50) --> качество выборки стало хуже.
